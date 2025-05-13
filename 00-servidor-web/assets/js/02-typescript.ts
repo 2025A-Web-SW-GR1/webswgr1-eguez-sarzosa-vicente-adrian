@@ -32,6 +32,57 @@ let undefineds = undefined;
 let undefinedsTS: undefined = undefined;
 console.log(typeof undefineds, "undefineds");
 
+// Truty y Falsy
+let trutyFalsy:any;
+trutyFalsy = "";
+if(trutyFalsy){ // ""
+    console.log("Truty");
+}else{
+    console.log("falsy");
+}
+trutyFalsy = "a";
+if(trutyFalsy){ // "a"
+    console.log("Truty");
+}else{
+    console.log("falsy");
+}
+trutyFalsy = -1;
+if(trutyFalsy){ // -1
+    console.log("Truty");
+}else{
+    console.log("falsy");
+}
+trutyFalsy = 0;
+if(trutyFalsy){ // 0
+    console.log("Truty");
+}else{
+    console.log("falsy");
+}
+trutyFalsy = 1;
+if(trutyFalsy){ // 1
+    console.log("Truty");
+}else{
+    console.log("falsy");
+}
+trutyFalsy = null;
+if(trutyFalsy){ // null
+    console.log("Truty");
+}else{
+    console.log("falsy");
+}
+trutyFalsy = {};
+if(trutyFalsy){ // {}
+    console.log("Truty");
+}else{
+    console.log("falsy");
+}
+trutyFalsy = [];
+if(trutyFalsy){ // []
+    console.log("Truty");
+}else{
+    console.log("falsy");
+}
+
 
 
 
