@@ -83,6 +83,36 @@ if(trutyFalsy){ // []
     console.log("falsy");
 }
 
+const adrian:any =  {
+    "nombre" : "Adrian",
+    'apellido': 'Eguez',
+    edad: 36,
+    hijos: 1,
+    casado: true,
+    zapatos: undefined,
+    ropa: {
+        color: "plomo",
+        talla: 40
+    },
+    mascotas: ['Cache', 'Peque', 'Pandi'],
+};
+console.log(adrian);
+// Acceder a las propiedades
+adrian.nombre // "Adrian"
+adrian["apellido"] // "Eguez"
+// Modificar (reasignar)
+adrian.nombre = "Vicente";
+adrian["nombre"] = "Vicente";
+// adrian = {}; ERROR
+// Crear atributos
+adrian.sueldo = 1.2;
+adrian["gastos"] = 0.8;
+// Eliminar propiedades
+adrian.nombre = undefined;
+delete adrian.nombre;
+
+
+
 
 
 
