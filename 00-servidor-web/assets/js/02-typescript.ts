@@ -227,8 +227,47 @@ function sumarNumeros (
 }
 sumarNumeros(1,2,3,4,5,2,1,2,3,4,5);
 
+// Destructuracion
 
-
+// Destructuracion de objetos
+const adrianDest = {
+    nombre: "Adrian",
+};
+const carolinaDest = {
+    nombre: "Carolina",
+    apellido: "Eguez",
+};
+// merge de las dos variables (orden importa)
+const adrianCarolinaDest = {
+    ...adrianDest,
+    ...carolinaDest,
+};
+// { nombre: "Carolina", apellido: "Eguez"}
+const carolinaAdrianDest = {
+    ...carolinaDest,
+    ...adrianDest,
+};
+// { nombre: "Adrian", apellido: "Eguez"}
+const overrideDest = {
+    ...carolinaAdrianDest,
+    ...adrianDest,
+    nombre: 'Vicente',
+};
+// Destructuracion de arreglos
+const arregloDestUno = [1,2,3];
+const arregloDestDos = [4,5,6];
+// Merge
+const arregloUnoDosDest = [
+    ...arregloDestUno,
+    ...arregloDestDos,
+]; // [1,2,3,4,5,6]
+const arregloDosUnoDest = [
+    ...arregloDestUno,
+    ...arregloDestDos,
+]; // [4,5,6,1,2,3]
+// La destructuracion es una forma de clonacion
+const objetoACopiar = {a:1};
+const objetoCopiadoA = {...objetoACopiar};
 
 
 
