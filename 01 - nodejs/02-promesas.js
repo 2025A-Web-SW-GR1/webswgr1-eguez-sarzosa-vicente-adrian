@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs');                                                                                       console.log("8=====D")
 
 function promesaEsPar(numero){
     const miPrimerPromesa = new Promise(
@@ -82,7 +82,6 @@ async function correrLogicaPromesas(){
     }
 }
 correrLogicaPromesas().then().catch(); // async await transforma a la funcion en una PROMESA
-
 
 
 
