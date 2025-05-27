@@ -9,13 +9,14 @@ function promesaEsPar(numero){
                 reject('No es par!'); // THROW
             }
         }
-    )
+    );
+    return miPrimerPromesa
 }
 function promesaElevarAlCuadrado(numero){
     return new Promise(res=>res(numero * numero));
 }
 
-promesaEsPar(4) // async
+promesaEsPar(3)
     .then( // continuo async
         (respuestaEsPar)=>{
             console.log('Es par', respuestaEsPar);
@@ -30,7 +31,7 @@ promesaEsPar(4) // async
                 respuestaElevarCuadrado);
         }
     )
-    .catch(
+    .catch( // catch
         (respuestaError)=>{
             console.log('NO ES PAR', respuestaError);
         }
