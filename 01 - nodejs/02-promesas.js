@@ -37,8 +37,33 @@ promesaEsPar(3)
         }
     );
 
-
-
+function leerArchivoPromesa(nombreArchivo){
+    return new Promise(
+        (res, rej)=>{ 
+            fs.readFile(
+                nombreArchivo, // path
+                'utf-8', // codificacion
+                (errorLectura, contenido) => {
+                    if(errorLectura){
+                        rej(errorLectura);
+                    }else{
+                        res(contenido);
+                    }
+                }
+            );
+        }
+    );
+}
+leerArchivoPromesa('.a.txt123123')
+    .then(
+        (contenidoArchivo)=>{
+            console.log('Contenido:', contenidoArchivo);
+        }
+    ).catch(
+        (error)=>{
+            console.error('ERROR:', error);
+        }
+    )
 
 
 
