@@ -16,7 +16,7 @@ function promesaElevarAlCuadrado(numero){
     return new Promise(res=>res(numero * numero));
 }
 
-promesaEsPar(3)
+promesaEsPar(4)
     .then( // continuo async
         (respuestaEsPar)=>{
             console.log('Es par', respuestaEsPar);
@@ -54,7 +54,7 @@ function leerArchivoPromesa(nombreArchivo){
         }
     );
 }
-leerArchivoPromesa('.a.txt123123')
+leerArchivoPromesa('./a.txt')
     .then(
         (contenidoArchivo)=>{
             console.log('Contenido:', contenidoArchivo);
