@@ -64,8 +64,24 @@ leerArchivoPromesa('./a.txt')
             console.error('ERROR:', error);
         }
     )
-
-
+// const correrLogicaPromesas2 = async ()=>{} // ESTO ES LO MISMO QUE LO DE ABAJO
+// ASYNC AWAIT
+// REGLAS:
+// 1) Estamos dentro de una funcion nombrada, anonima o fat arrow
+// 2) Agregar la palabra 'ASYNC' antes de la declaracion de la funcion
+// 3) Agregar 'AWAIT' dentro de un bloque TRY CATCH antes de la promesa
+async function correrLogicaPromesas(){
+    try {
+        const respuestaLeerArchivo = await leerArchivoPromesa('./a.txt');
+        console.log('1) Respuesta archivo', respuestaLeerArchivo);
+        const respuestaLeerArchivo2 = await leerArchivoPromesa('./a.txt');
+        console.log('2) Respuesta archivo', respuestaLeerArchivo2);
+        await leerArchivoPromesa('./a123.txt');
+    } catch(error){
+        console.log('3) ERROR', error);
+    }
+}
+correrLogicaPromesas().then().catch(); // async await transforma a la funcion en una PROMESA
 
 
 
