@@ -1,8 +1,13 @@
 import { 
+    Body,
   Controller, Get, 
+  Post, 
   Query} from '@nestjs/common';
 import { CasaService } from './casa.service';
-import { Like } from 'typeorm';
+import { FindManyOptions, Like } from 'typeorm';
+import { BuscarDto } from './dto/buscar.dto';
+import { Casa } from './casa.entity';
+import { CrearEditarBaseDto } from './dto/crear-editar.base.dto';
 
 @Controller('api/casa')
 export class CasaController {
@@ -13,13 +18,25 @@ export class CasaController {
     }
     @Get()
     obtener(
-        @Query('nombre') nombre: string,
+        @Query() parametrosConsulta:BuscarDto,
     ){
-        return this.casaService.obtenerTodos({
-            where: {
+        const objetoBusqueda: FindManyOptions<Casa> = {};
+        if(parametrosConsulta.nombre){
+            objetoBusqueda.where = {
                 nombre: 
-                   Like("%" + nombre + "%"),
+                   Like("%" + parametrosConsulta.nombre + "%"),
             }
-        });
+        }
+        return this.casaService.obtenerTodos(objetoBusqueda);
+    }
+    @Post()
+    crearUno(
+        @Body() parametrosCuerpo: CrearEditarBaseDto
+    ){
+        return this.casaService.crearUno(
+            parametrosCuerpo.nombre,
+            parametrosCuerpo.valor,
+            parametrosCuerpo.imagenUrl
+        );
     }
 }

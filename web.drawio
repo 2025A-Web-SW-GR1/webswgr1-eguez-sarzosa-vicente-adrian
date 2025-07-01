@@ -133,7 +133,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wEi2FYDEgyQcWEEH3hDQ" name="Página-3">
-    <mxGraphModel dx="951" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="726" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -177,6 +177,42 @@
         </mxCell>
         <mxCell id="Vr0HcXrzUOHnuwcPvrhN-12" value="Usuario" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="786.5" y="310" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-1" value="CREAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="696.5" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-3" value="ACTUALIZAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="696.5" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-4" value="BUSCAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="696.5" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-5" value="ELIMINAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="696.5" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-6" value="GET /casa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="420" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-7" value="GET /casa/:id" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="840" y="460" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-8" value="POST /casa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="515" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-9" value="PATCH /casa/:id" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="610" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-10" value="DELETE /casa/:id" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="840" y="655" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-12" value="nombre: (Alpha Numerico)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-13" value="nombre: (max 50 caracteres)&lt;br&gt;valor: numero positivo o 0&lt;div&gt;imagenUrl: url&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="485" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xQ1dNvv0QSbDhipB3ktM-14" value="nombre: (max 50 caracteres)&lt;br&gt;valor: numero positivo o 0&lt;div&gt;imagenUrl: url&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="610" width="120" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
