@@ -6,10 +6,10 @@ export const databaseProviders = [
     useFactory: async () => {
       const dataSource = new DataSource({
         type: 'sqlite',
-        database: 'database.sqlite', 
+        database: 'database.sqlite',
         // Name of your SQLite database file
         entities: [
-            __dirname + '/../**/*.entity{.ts,.js}',
+          __dirname + '/../**/*.entity{.ts,.js}',
         ],
         synchronize: true,
       });
